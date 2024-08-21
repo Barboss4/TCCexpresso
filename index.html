@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serviços de Formatação e Análise de Dados</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            display: flex;
+            background-color: #1f485a;
+            justify-content: center; /* Centraliza horizontalmente */
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        header .logo {
+            width: 50px; /* Ajuste o tamanho conforme necessário */
+            height: auto;
+            margin-right: 10px; /* Espaço entre a imagem e o texto */
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+
+        nav {
+            margin: 0;
+            padding: 10px;
+            text-align: center;
+            background-color: #333;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        .services, .funcionamento, .pricing, .team, .testimonials, .contact {
+            background-color: #f4f4f4;
+            margin-bottom: 20px;
+            padding: 20px;
+        }
+
+        h2 {
+            color: #4CAF50;
+        }
+
+        .contact form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .contact label, .contact input, .contact textarea {
+            margin-bottom: 10px;
+        }
+
+        .centralizar-imagem {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 100%;
+            max-width: 600px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .pricing form {
+            margin: 0 auto;
+            max-width: 400px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .pricing input, .pricing select {
+            margin-bottom: 10px;
+            padding: 8px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        
+        .pricing button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        .pricing button:hover {
+            background-color: #45a049;
+        }
+        
+        .pricing-result {
+            margin-top: 20px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        /* Estilo do botão Back to Top */
+        .back-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #1f485a;
+            color: white;
+            border: none;
+            border-radius: 5px; /* Altere para quadrado com bordas ligeiramente arredondadas */
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 40px; /* Aumente o tamanho da fonte para melhor visibilidade */
+            text-decoration: none;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            text-align: center; /* Alinhar o texto ao centro */
+        }
+
+        /* Exibir o botão quando o usuário rolar para baixo */
+        .back-to-top.show {
+            opacity: 1;
+        }
+
+        /* Estilo para o botão quando o mouse passa por cima */
+        .back-to-top:hover {
+            background-color: #082633;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <img src="logo.jpg" alt="Logo" class="logo">
+        <h1>TCCexpresso</h1>
+    </header>
+
+    <nav>
+        <a href="#services">Serviços</a>
+        <a href="#funcionamento">Como Funciona</a>
+        <a href="#pricing">Preços</a>
+        <a href="#team">Equipe</a>
+        <a href="#contact">Contato</a>
+    </nav>
+
+    <section id="services" class="services">
+        <h2>Nossos Serviços</h2>
+        <p><strong>Formatação e Criação de Documentos:</strong> Formatação de TCC, dissertações, artigos e outros documentos
+            acadêmicos seguindo as normas ABNT, APA, e outras.</p>
+        <p><strong>Análise de Dados e Estatística:</strong> Auxílio em projetos acadêmicos e de pesquisa com análise estatística,
+            visualização de dados e interpretação.</p>
+        <p><strong>Orientação Acadêmica:</strong> Orientação para estudantes e profissionais na organização e desenvolvimento de seus
+            trabalhos.</p>
+    </section>
+
+    <section id="funcionamento" class="funcionamento">
+        <h2>Funcionamento</h2>
+        <p>Nosso processo é transparente e eficiente, garantindo que você tenha total controle sobre o andamento do seu projeto. Veja como funciona:</p>
+
+        <ol>
+            <li><strong>Início do Serviço:</strong> Para iniciar o serviço, é necessário um pagamento inicial de <strong>30%</strong> do valor total. Este valor é usado para garantir a reserva de nossa equipe e o início imediato do trabalho.</li>
+            <li><strong>Acompanhamento em Tempo Real:</strong> Durante todo o processo, você poderá acompanhar o progresso do seu projeto por meio de um link que será enviado a você. Este link dará acesso a um documento no Google Drive, onde você poderá ver as atualizações e o desenvolvimento em tempo real.</li>
+            <li><strong>Finalização e Entrega:</strong> Após a conclusão do serviço, a entrega final será realizada conforme o prazo acordado. O pagamento restante de <strong>70%</strong> será solicitado antes da entrega final. Garantimos que você ficará satisfeito com o resultado.</li>
+        </ol>
+    
+        <p>Estamos comprometidos em fornecer um serviço de alta qualidade e transparência em todas as etapas do processo. Sua satisfação é nossa prioridade!</p>
+    
+        <figure>
+            <img src="banner.png" alt="Descrição da imagem" class="centralizar-imagem">
+        </figure>
+    </section>
+
+    <section id="pricing" class="pricing">
+        <h2>Preços</h2>
+        <form id="pricing-form">
+
+            <label for="complexidade">Tipo de Trabalho:</label>
+            <select id="complexidade" name="complexidade" required>
+                <option value="Revisão">Revisão</option>
+                <option value="Orientação">Orientação</option>
+                <option value="Escrita">Escrita de Documento</option>
+                <option value="Análise">Análise de Dados</option>
+            </select>
+
+            <label for="pesquisa">Pesquisa Necessária (complexidade):</label>
+            <select id="pesquisa" name="pesquisa" required>
+                <option value="nenhuma">Nenhuma/ Baixa</option>
+                <option value="moderada">Moderada</option>
+                <option value="extensa">Extensa</option>
+            </select>
+
+            <label for="prazo_dias">Prazo em Dias:</label>
+            <select id="prazo_dias" name="prazo_dias" required>
+                <option value="90">Mais de 60 dias</option>
+                <option value="60">Até 60 dias</option>
+                <option value="30">Até 30 dias</option>
+                <option value="15">Até 15 dias</option>
+                <option value="7">Até 7 dias</option>
+            </select>
+
+            <label for="num_paginas">Número de Páginas:</label>
+            <input type="number" id="num_paginas" name="num_paginas" required>
+
+            <button type="button" onclick="calcularPreco()">Calcular Preço</button>
+        </form>
+        <div id="pricing-result" class="pricing-result"></div>
+    </section>
+
+    <section id="team" class="team">
+        <h2>Nossa Equipe</h2>
+
+        <p> Na TCCexpresso, temos o orgulho de contar com uma equipe de especialistas altamente qualificados, com ampla experiência e formação acadêmica de excelência. Estamos prontos para oferecer soluções personalizadas e inovadoras nas áreas de Saúde, Exatas e Tecnologia.</p>
+
+        <p>Conheça a expertise que nossos profissionais trazem para cada projeto:</p>
+        <ul>
+            <li><strong>Saúde</strong>: Nosso doutor é um líder reconhecido na área da saúde, com uma vasta experiência em pesquisa e prática clínica. Ele possui um conhecimento profundo sobre as complexidades do setor e está apto a desenvolver soluções avançadas que atendem às necessidades mais exigentes. Sua abordagem inovadora e baseada em evidências é essencial para resolver desafios complexos e promover a excelência no cuidado e na pesquisa.</li>
+            <li><strong>Exatas</strong>: Nossa equipe inclui três mestres em áreas cruciais como Matemática, Estatística e Engenharia. Cada um desses profissionais traz um conjunto único de habilidades e experiências, garantindo uma análise rigorosa e precisa em todos os aspectos do projeto. Eles são especialistas em modelagem matemática, análise de dados e engenharia aplicada, proporcionando insights detalhados e soluções baseadas em dados robustos.</li>
+            <li><strong>Tecnologia</strong>: Nosso especialista em tecnologia possui um sólido conhecimento das mais recentes inovações e tendências tecnológicas. Ele está sempre atualizado com as últimas tecnologias emergentes e metodologias avançadas, oferecendo soluções que aproveitam o poder da tecnologia para resolver problemas complexos e impulsionar a transformação digital. Sua experiência inclui o desenvolvimento de soluções tecnológicas personalizadas, a integração de sistemas e a implementação de tecnologias de ponta.</li>
+        </ul>
+    </section>
+
+    <section id="testimonials" class="testimonials">
+        <h2>O que nossos clientes dizem</h2>
+        <p>"Excelente serviço de formatação! Meu trabalho foi entregue antes do prazo e estava impecável. A equipe demonstrou grande atenção aos detalhes e profissionalismo." - João Silva</p>
+        <p>"A análise de dados que eles fizeram foi essencial para o sucesso do meu projeto de pesquisa. Recebi insights valiosos que foram cruciais para minha análise final." - Maria Souza</p>
+        <p>"O atendimento foi excepcional. A equipe foi muito prestativa e sempre disponível para esclarecer dúvidas. A formatação e a revisão do meu documento foram feitas com precisão e eficiência." - Lucas Almeida</p>
+        <p>"Estou impressionado com a qualidade do trabalho. A formatação estava perfeita, e o suporte durante o processo foi muito eficiente. Recomendo a todos que precisam de um serviço de alta qualidade." - Ana Pereira</p>
+        <p>"O serviço de orientação acadêmica foi fundamental para a conclusão do meu trabalho. A equipe forneceu suporte detalhado e personalizado, que fez toda a diferença no meu projeto." - Carlos Lima</p>
+
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Entre em Contato</h2>
+        <p>Estamos aqui para ajudar! Entre em contato conosco através dos seguintes canais:</p>
+        
+        <ul>
+            <li><strong>Email:</strong> <a href="tccanapolis@gmail.com">tccanapolis@gmail.com</a></li>
+            <li><strong>WhatsApp:</strong> <a href="https://wa.me/5562992818326">Iniciar conversa</a></li>
+        </ul>
+        
+        <p>Estamos ansiosos para ouvir de você e ajudar com o que precisar!</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Serviços de Formatação e Análise de Dados. Todos os direitos reservados.</p>
+    </footer>
+
+    <a href="#" class="back-to-top" id="backToTop">&#8679;</a>
+
+    <script>
+        function calcularPreco() {
+            const numPaginas = parseFloat(document.getElementById('num_paginas').value);
+            const complexidade = document.getElementById('complexidade').value;
+            const pesquisa = document.getElementById('pesquisa').value;
+            const prazoDias = document.getElementById('prazo_dias').value;
+    
+            const fatorComplexidade = {
+                "Revisão": 1.0,
+                "Orientação": 1.5,
+                "Escrita": 2.0,
+                "Análise": 1.5 // Pode ajustar o fator se necessário, mas o valor fixo será definido
+            };
+            const fatorPesquisa = {
+                "nenhuma": 1.0,
+                "moderada": 1.5,
+                "extensa": 2.0
+            };
+            const fatorPrazo = {
+                "90": 1.0,
+                "60": 1.5,
+                "30": 2.0,
+                "15": 4.0,
+                "7": 6.0
+            };
+    
+            const precoBasePorPagina = 20.0;
+            const precoFixoAnalise = 100.0; // Defina o preço fixo para "Análise"
+    
+            let precoTotal;
+    
+            if (complexidade === "Análise") {
+                precoTotal = precoFixoAnalise *
+                fatorPesquisa[pesquisa] *
+                fatorPrazo[prazoDias];
+            } else {
+                precoTotal = precoBasePorPagina * numPaginas *
+                    fatorComplexidade[complexidade] *
+                    fatorPesquisa[pesquisa] *
+                    fatorPrazo[prazoDias];
+            }
+    
+            // Verifica se precoTotal é NaN e define como 0 se for o caso
+            precoTotal = isNaN(precoTotal) ? 0 : precoTotal;
+    
+            const precoabsoluto = Math.abs(precoTotal);
+    
+            const valorMaior = Math.max(50, precoabsoluto);
+    
+            document.getElementById('pricing-result').innerText = `O preço total para o serviço é: R$ ${valorMaior.toFixed(2)}`;
+        }
+
+                // Mostrar o botão quando o usuário rolar para baixo
+        window.addEventListener('scroll', function() {
+            const backToTopButton = document.getElementById('backToTop');
+            if (window.scrollY > 300) { // Ajuste o valor conforme necessário
+                backToTopButton.classList.add('show');
+            } else {
+                backToTopButton.classList.remove('show');
+            }
+        });
+
+        // Rolagem suave para o topo
+        document.getElementById('backToTop').addEventListener('click', function(e) {
+            e.preventDefault();
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+    </script>
+    
+
+</body>
+
+</html>
